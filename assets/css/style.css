@@ -181,17 +181,21 @@ body {
   padding: 64px 0 0 130px;
 }
 
-.hero .heading {
+.heading {
   font-family: "Sen";
 
   font-weight: 700;
-  font-size: 5.8rem;
-  line-height: 1.17;
+
   /* or 117% */
 
   letter-spacing: -0.02em;
 
   color: #171100;
+}
+
+.heading.lv1 {
+  font-size: 5.8rem;
+  line-height: 1.17;
 }
 .hero .desc {
   margin: 22px 0;
@@ -257,4 +261,50 @@ body {
 
   color: #171100;
   padding: 0 8px 0 28px;
+}
+
+.popular {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+
+.heading.lv2 {
+  font-size: 38px;
+  line-height: 48px;
+  /* identical to box height, or 126% */
+}
+
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-top .desc {
+  font-size: 18px;
+  line-height: 1.67;
+  color: #5f5b53;
+
+  margin-top: 16px;
+  width: 458px;
+}
+.popular-top .controls {
+  display: flex;
+  gap: 18px;
+}
+.popular-top .control-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #ffb900;
+  border: 1px solid #ffb900;
+  background: transparent;
+  border-radius: 50%;
+}
+.popular-top .control-btn:hover {
+  background: #ffb900;
+  color: white;
+  cursor: pointer;
 }
